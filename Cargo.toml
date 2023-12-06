@@ -1,0 +1,24 @@
+[package]
+name = "ext"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+petgraph = "0.6"
+error-stack = "0.4"
+regex = "1.10"
+portable-atomic = { version = "1.6", features = ["float"] }
+rand = "0.8"
+bitflags = "2.4"
+cfg-if = "1"
+log = "0.4"
+env_logger = "0.10"
+glam = "0.24"
+either = "1.9"
+arrayvec = "0.7"
+indexmap = "2"
+num-bigint = "0.4"
+num-traits = "0.2"
+
+[features]
+serde = ["glam/serde", "portable-atomic/serde", "petgraph/serde"]
