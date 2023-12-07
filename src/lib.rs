@@ -1,7 +1,10 @@
+#![doc = include_str!("../README.md")]
+//!
 //! The Rust User Standard Library
 //!
-//! This is a drop in replacement for the rust standard library. To
+//! This is an additions to the rust standard library. To
 //! get started add it as a dependency:
+//!
 //! ```toml
 //! [dependencies]
 //! ext = "*"
@@ -12,7 +15,7 @@
 //! find that the structure is very similar to the rust standard so try looking
 //! in the same module path and you might find something interesting.
 
-#![deny(unused_crate_dependencies)]
+#![forbid(unused_crate_dependencies)]
 
 extern crate self as ext;
 
